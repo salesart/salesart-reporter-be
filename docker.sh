@@ -1,0 +1,1 @@
+mvn clean install -DskipTests && docker build -t salesart-reporter-api:1.0.0 . && docker compose up -d

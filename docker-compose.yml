@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  salesart-reporter-api:
+    image: salesart-reporter-api:1.0.0
+    container_name: salesart-reporter-api
+    environment:
+      POST_REQUEST_SIZE: 3145728
+    ports:
+      - "8080:8080"
+    entrypoint:
+      - java
+      - -jar
+      - -Xms256M
+      - -Xmx2048M
+      - application.jar
