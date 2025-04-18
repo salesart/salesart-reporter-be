@@ -1,0 +1,5 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+report:
+  post-request-size-limit: ${POST_REQUEST_SIZE:3145728}
